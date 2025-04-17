@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h2>Update Parking Data</h2>
+
+<p>This form shows how an admin might edit existing lot details in the future.</p>
+
+<form>
+    <div class="mb-3">
+        <label for="existingLot" class="form-label">Select Lot</label>
+        <select class="form-select" id="existingLot" disabled>
+            <option selected>Lot 5B</option>
+            <option>Lot 3C</option>
+            <option>Lot 7A</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="newCapacity" class="form-label">New Capacity</label>
+        <input type="number" class="form-control" id="newCapacity" placeholder="e.g., 130" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="newAvailable" class="form-label">New Available Spaces</label>
+        <input type="number" class="form-control" id="newAvailable" placeholder="e.g., 45" disabled>
+    </div>
+    <button type="submit" class="btn btn-warning" disabled>Update Lot</button>
+</form>

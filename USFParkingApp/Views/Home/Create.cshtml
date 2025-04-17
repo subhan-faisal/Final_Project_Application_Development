@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create Parking Data</h2>
+
+<p>This form represents how users might add a new parking lot in a future dynamic version.</p>
+
+<form>
+    <div class="mb-3">
+        <label for="lotName" class="form-label">Parking Lot Name</label>
+        <input type="text" class="form-control" id="lotName" placeholder="e.g., Lot 5B" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="zone" class="form-label">Zone</label>
+        <select class="form-select" id="zone" disabled>
+            <option selected>Choose a zone...</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="capacity" class="form-label">Total Capacity</label>
+        <input type="number" class="form-control" id="capacity" placeholder="e.g., 120" disabled>
+    </div>
+    <button type="submit" class="btn btn-success" disabled>Add Lot</button>
+</form>
