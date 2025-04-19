@@ -1,31 +1,95 @@
+/* ── 1. ROOT VARIABLES ───────────────────────────────────────── */
+:root {
+  /* USF‑inspired palette */
+  --primary:   #006747;   /* green */
+  --secondary: #FFC20E;   /* gold */
+  --text-color: #333333;
+  --bg-page:   #f8f9fa;
+
+  /* Typography */
+  --font-base:     "Segoe UI", Arial, sans‑serif;
+  --line-height:   1.6;
+  --heading-mult:  1.25;  /* headings ~25% larger than body */
+}
+
+/* ── 2. BASE TYPOGRAPHY & LAYOUT ───────────────────────────── */
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
+  font-size: 14px;     /* mobile base */
   position: relative;
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;   /* tablet+ base */
+  }
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+body {
+  margin-bottom: 60px;
+  font-family: var(--font-base);
+  color: var(--text-color);
+  line-height: var(--line-height);
+  background-color: var(--bg-page);
+}
+
+/* ── 3. EXISTING FOCUS STYLES ─────────────────────────────── */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white,
+              0 0 0 0.25rem #258cfb;
+}
+
+/* Floating‑label placeholder  */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
 }
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* ── 4. NAVBAR & BUTTON OVERRIDES ─────────────────────────── */
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary) !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+}
+.nav-link.active {
+  color: var(--secondary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ── 5. HOVER / ACTIVE TRANSITIONS ────────────────────────── */
+.nav-link:hover,
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+/* ── 6. RESPONSIVE TYPOGRAPHY ─────────────────────────────── */
+@media (max-width: 575px) {
+  h1 { font-size: calc(2rem * var(--heading-mult)); }
+  h2 { font-size: calc(1.5rem * var(--heading-mult)); }
+  .pb-3 { padding-bottom: 1rem !important; }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  h1 { font-size: calc(2.25rem * var(--heading-mult)); }
+  h2 { font-size: calc(1.75rem * var(--heading-mult)); }
+}
+
