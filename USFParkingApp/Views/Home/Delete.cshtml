@@ -1,16 +1,47 @@
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Delete Parking Data";
 }
 
-<h2>Delete Parking Data</h2>
+<h2>Delete Parking Lot</h2>
 
-<p>This page would allow users (in a real system) to delete old or inactive lots.</p>
+<form id="deleteForm">
+    <div class="mb-3">
+        <label for="deleteLot" class="form-label">Select Lot to Delete</label>
+        <select class="form-select" id="deleteLot" required>
+            <option value="">Select a lot...</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
 
-<ul>
-    <li>Lot 1A – Inactive for over 12 months</li>
-    <li>Lot 9D – Permanently closed</li>
-</ul>
+@section Scripts {
+    <script>
+        const parkingData = JSON.parse(localStorage.getItem("parkingData")) || [];
+        const deleteSelect = document.getElementById('deleteLot');
 
-<p>
-    In a future version, you could click a “Delete” button next to each lot, and it would remove that record from the system after confirmation.
-</p>
+        // 🧠 Populate dropdown
+        parkingData.forEach((lot, index) => {
+            const option = document.createElement("option");
+            option.value = index;
+            option.textContent = lot.lot;
+            deleteSelect.appendChild(option);
+        });
+
+        // 🗑️ Handle deletion
+        document.getElementById('deleteForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const selectedIndex = deleteSelect.value;
+            if (selectedIndex === "") return;
+
+            const confirmDelete = confirm(`Are you sure you want to delete ${parkingData[selectedIndex].lot}?`);
+            if (!confirmDelete) return;
+
+            parkingData.splice(selectedIndex, 1); // remove selected lot
+            localStorage.setItem("parkingData", JSON.stringify(parkingData));
+
+            alert("Lot deleted successfully!");
+            window.history.back(); // Go back to previous chart page
+        });
+    </script>
+}

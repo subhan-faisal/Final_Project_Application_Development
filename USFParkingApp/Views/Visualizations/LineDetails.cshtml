@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Line Chart Details";
+}
+
+<h2>Line Chart Details</h2>
+<canvas id="lineChart" width="400" height="200"></canvas>
+
+<div class="mt-4 d-flex justify-content-center gap-2 flex-wrap">
+    <a class="btn btn-success" href="/Home/Create">Create</a>
+    <a class="btn btn-warning" href="/Home/Update">Update</a>
+    <a class="btn btn-danger" href="/Home/Delete">Delete</a>
+    <button class="btn btn-secondary" onclick="location.reload()">Read</button>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/js/lineChartDetails.js"></script>
+}

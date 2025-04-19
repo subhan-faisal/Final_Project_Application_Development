@@ -1,27 +1,83 @@
 @{
-    ViewData["Title"] = "Update";
+    ViewData["Title"] = "Update Parking Data";
 }
 
-<h2>Update Parking Data</h2>
+<h2>Update Parking Lot</h2>
 
-<p>This form shows how an admin might edit existing lot details in the future.</p>
-
-<form>
+<form id="updateForm">
     <div class="mb-3">
         <label for="existingLot" class="form-label">Select Lot</label>
-        <select class="form-select" id="existingLot" disabled>
-            <option selected>Lot 5B</option>
-            <option>Lot 3C</option>
-            <option>Lot 7A</option>
+        <select class="form-select" id="existingLot" required>
+            <option value="">Select a lot...</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="type" class="form-label">Type</label>
+        <select class="form-select" id="type" required>
+            <option value="">Select...</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Visitor">Visitor</option>
         </select>
     </div>
     <div class="mb-3">
         <label for="newCapacity" class="form-label">New Capacity</label>
-        <input type="number" class="form-control" id="newCapacity" placeholder="e.g., 130" disabled>
+        <input type="number" class="form-control" id="newCapacity" required>
     </div>
     <div class="mb-3">
         <label for="newAvailable" class="form-label">New Available Spaces</label>
-        <input type="number" class="form-control" id="newAvailable" placeholder="e.g., 45" disabled>
+        <input type="number" class="form-control" id="newAvailable" required>
     </div>
-    <button type="submit" class="btn btn-warning" disabled>Update Lot</button>
+    <button type="submit" class="btn btn-warning">Update Lot</button>
 </form>
+
+@section Scripts {
+    <script>
+        const parkingData = JSON.parse(localStorage.getItem("parkingData")) || [];
+
+        const lotSelect = document.getElementById('existingLot');
+        const typeInput = document.getElementById('type');
+        const capacityInput = document.getElementById('newCapacity');
+        const availableInput = document.getElementById('newAvailable');
+
+        // 🧠 Populate dropdown
+        parkingData.forEach((lot, index) => {
+            const option = document.createElement("option");
+            option.value = index;
+            option.textContent = lot.lot;
+            lotSelect.appendChild(option);
+        });
+
+        // 🎯 Fill form when user selects a lot
+        lotSelect.addEventListener('change', function () {
+            const selectedIndex = this.value;
+            if (selectedIndex !== "") {
+                const selectedLot = parkingData[selectedIndex];
+                typeInput.value = selectedLot.type;
+                capacityInput.value = selectedLot.capacity;
+                availableInput.value = selectedLot.available;
+            }
+        });
+
+        // ✅ Submit updated values
+        document.getElementById('updateForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const selectedIndex = lotSelect.value;
+            if (selectedIndex === "") return;
+
+            parkingData[selectedIndex].type = typeInput.value;
+            parkingData[selectedIndex].capacity = parseInt(capacityInput.value);
+            parkingData[selectedIndex].available = parseInt(availableInput.value);
+            parkingData[selectedIndex].history.push(parseInt(availableInput.value));
+            if (parkingData[selectedIndex].history.length > 5) {
+                parkingData[selectedIndex].history.shift(); // keep last 5 entries
+            }
+
+            localStorage.setItem("parkingData", JSON.stringify(parkingData));
+
+            alert("Parking lot updated!");
+            window.history.back(); // go back to chart page
+        });
+    </script>
+}
