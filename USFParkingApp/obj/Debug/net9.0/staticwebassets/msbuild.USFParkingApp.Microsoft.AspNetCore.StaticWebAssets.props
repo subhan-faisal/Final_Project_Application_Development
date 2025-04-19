@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lugek5hnai</Fingerprint>
-      <Integrity>zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=</Integrity>
+      <Fingerprint>0z286har3q</Fingerprint>
+      <Integrity>9DQppIQpy+XvQWmAIh5/Qzl6clMUwKLqhCTrD5OQZW4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>h20vcvo7xz</Fingerprint>
-      <Integrity>50WiVANnLmmc2vTGUu/GRE1T81FJjjgCZz9t0xHlyn4=</Integrity>
+      <Fingerprint>9xe66d24da</Fingerprint>
+      <Integrity>DcukvUsgK7IPwnHioSaofljeylwwR6WH9hU8+t1CEs0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\barChartDetails.js'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1lz2ow6xpe</Fingerprint>
-      <Integrity>pVjfKC8dzBBlyc8yGpcUzuLOSXEDzbMmY0XZjInL5+0=</Integrity>
+      <Fingerprint>w6kby033yq</Fingerprint>
+      <Integrity>+IyhobFGXHALR0fhe4DeOI5pY6qxt9HAzR5a+xaeqc8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\lineChartDetails.js'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>19xq5qp60u</Fingerprint>
-      <Integrity>K/iBy+IHZQLc8tlQDh+jn8XW2lHcGeSnW+64dv6TuPw=</Integrity>
+      <Fingerprint>kdt27un04w</Fingerprint>
+      <Integrity>yO8cI0c0q/jsgpelp9fpAlzmpL7QGlyRC5ndha42ZHk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\pieChartDetails.js'))</OriginalItemSpec>
@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2e7h4usl1d</Fingerprint>
-      <Integrity>VgQIvLm4ebOvzMcH8WSN2L5jjX4wJoo++dIaG+qnZYg=</Integrity>
+      <Fingerprint>h0otrxxgim</Fingerprint>
+      <Integrity>0U3Xpo4BH7cWofLxp2/nYunt6LkDQlrj9uMBuutSJlA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\visualizations.js'))</OriginalItemSpec>
@@ -1206,23 +1206,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\USFParkingApp.w8tmcfgi75.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\USFParkingApp.pb463ej135.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>USFParkingApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/USFParkingApp</BasePath>
-      <RelativePath>USFParkingApp.w8tmcfgi75.bundle.scp.css</RelativePath>
+      <RelativePath>USFParkingApp.pb463ej135.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>w8tmcfgi75</Fingerprint>
-      <Integrity>cBrAiYNTEXC2jo8AEQX8kEJ7gohUyn8sfd62YKIZE/A=</Integrity>
+      <Fingerprint>pb463ej135</Fingerprint>
+      <Integrity>ZaYpWxPM1iB7XBPRP/tea7NjJHY8/eyn/Xq+xeATCyI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\USFParkingApp.w8tmcfgi75.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\USFParkingApp.pb463ej135.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
