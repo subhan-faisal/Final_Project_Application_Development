@@ -1,28 +1,69 @@
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Parking Data";
 }
 
-<h2>Create Parking Data</h2>
+<h2>Create New Parking Lot</h2>
 
-<p>This form represents how users might add a new parking lot in a future dynamic version.</p>
-
-<form>
+<form id="createForm">
     <div class="mb-3">
-        <label for="lotName" class="form-label">Parking Lot Name</label>
-        <input type="text" class="form-control" id="lotName" placeholder="e.g., Lot 5B" disabled>
+        <label for="lotName" class="form-label">Lot Name</label>
+        <input type="text" class="form-control" id="lotName" required>
     </div>
     <div class="mb-3">
         <label for="zone" class="form-label">Zone</label>
-        <select class="form-select" id="zone" disabled>
-            <option selected>Choose a zone...</option>
+        <select class="form-select" id="zone" required>
+            <option value="">Select...</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
         </select>
     </div>
     <div class="mb-3">
-        <label for="capacity" class="form-label">Total Capacity</label>
-        <input type="number" class="form-control" id="capacity" placeholder="e.g., 120" disabled>
+        <label for="type" class="form-label">Type</label>
+        <select class="form-select" id="type" required>
+            <option value="">Select...</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Visitor">Visitor</option>
+        </select>
     </div>
-    <button type="submit" class="btn btn-success" disabled>Add Lot</button>
+    <div class="mb-3">
+        <label for="capacity" class="form-label">Capacity</label>
+        <input type="number" class="form-control" id="capacity" required>
+    </div>
+    <div class="mb-3">
+        <label for="available" class="form-label">Available Spaces</label>
+        <input type="number" class="form-control" id="available" required>
+    </div>
+    <button type="submit" class="btn btn-success">Add Lot</button>
 </form>
+
+@section Scripts {
+    <script>
+        document.getElementById('createForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const lot = {
+                lot: document.getElementById('lotName').value,
+                zone: document.getElementById('zone').value,
+                type: document.getElementById('type').value,
+                capacity: parseInt(document.getElementById('capacity').value),
+                available: parseInt(document.getElementById('available').value),
+                history: [
+                    parseInt(document.getElementById('available').value),
+                    parseInt(document.getElementById('available').value),
+                    parseInt(document.getElementById('available').value),
+                    parseInt(document.getElementById('available').value),
+                    parseInt(document.getElementById('available').value)
+                ]
+            };
+
+            const data = JSON.parse(localStorage.getItem("parkingData")) || [];
+            data.push(lot);
+            localStorage.setItem("parkingData", JSON.stringify(data));
+
+            alert("Parking lot added!");
+            window.history.back(); // Go back to previous page (BarDetails, PieDetails, etc.)
+        });
+    </script>
+}

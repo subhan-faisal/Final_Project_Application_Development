@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/USFParkingApp.csproj": {}
+    "C:\\Users\\ronia\\Desktop\\app\\Final_Project_Application_Development\\USFParkingApp\\USFParkingApp.csproj": {}
   },
   "projects": {
-    "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/USFParkingApp.csproj": {
+    "C:\\Users\\ronia\\Desktop\\app\\Final_Project_Application_Development\\USFParkingApp\\USFParkingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/USFParkingApp.csproj",
+        "projectUniqueName": "C:\\Users\\ronia\\Desktop\\app\\Final_Project_Application_Development\\USFParkingApp\\USFParkingApp.csproj",
         "projectName": "USFParkingApp",
-        "projectPath": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/USFParkingApp.csproj",
-        "packagesPath": "/Users/chandarrathala/.nuget/packages/",
-        "outputPath": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/",
+        "projectPath": "C:\\Users\\ronia\\Desktop\\app\\Final_Project_Application_Development\\USFParkingApp\\USFParkingApp.csproj",
+        "packagesPath": "C:\\Users\\ronia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronia\\Desktop\\app\\Final_Project_Application_Development\\USFParkingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/chandarrathala/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ronia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
