@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Parking Lots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>USF Parking Lot Manager</title>
   <script defer src="parking.js"></script>
 </head>
 <body>
-  <h1>Parking Lot Availability</h1>
+  <h1>USF Parking Lot Manager</h1>
+
+  <!-- Create Section -->
+  <section id="create-section">
+    <h2>Create New Lot</h2>
+    <form id="create-form">
+      <input type="text" id="name" placeholder="Lot Name" required />
+      <input type="number" id="totalSlots" placeholder="Total Slots" required />
+      <input type="number" id="availableSlots" placeholder="Available Slots" required />
+      <button type="submit">Create Lot</button>
+    </form>
+    <hr/>
+  </section>
+
+  <!-- Display Section -->
   <div id="lot-container">
-    <p>Loading lots...</p>
+    <p>Loading parking data...</p>
   </div>
 </body>
 </html>
-
