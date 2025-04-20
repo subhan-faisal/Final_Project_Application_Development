@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Parking Lot - USF Parking Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --usf-green: #006747;
+    }
+    .text-usf-green { color: var(--usf-green); }
+    .btn-outline-usf-green {
+      color: var(--usf-green);
+      border-color: var(--usf-green);
+    }
+    .btn-outline-usf-green:hover {
+      background-color: var(--usf-green);
+      color: white;
+    }
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .hero-banner {
+      background-image: url("images/usf-parking-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold text-success" href="index.html">USFParkingApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Visualizations.html">Visualizations</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO BANNER -->
+<div class="hero-banner text-white d-flex align-items-center">
+  <div class="overlay w-100 h-100 position-absolute" style="background-color: rgba(0, 103, 71, 0.85); top: 0; left: 0;"></div>
+  <div class="w-100 text-center position-relative px-3 py-5" style="z-index: 2;">
+    <h1 class="display-4 fw-bold">Create New Parking Lot</h1>
+  </div>
+</div>
+
+<!-- FORM SECTION -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm">
+        <form id="createForm">
+          <div class="mb-3">
+            <label for="lotName" class="form-label">Lot Name</label>
+            <input type="text" class="form-control" id="lotName" required>
+          </div>
+          <div class="mb-3">
+            <label for="zone" class="form-label">Zone</label>
+            <select class="form-select" id="zone" required>
+              <option value="">Select...</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+            <select class="form-select" id="type" required>
+              <option value="">Select...</option>
+              <option value="Student">Student</option>
+              <option value="Faculty">Faculty</option>
+              <option value="Visitor">Visitor</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="capacity" class="form-label">Capacity</label>
+            <input type="number" class="form-control" id="capacity" required>
+          </div>
+          <div class="mb-3">
+            <label for="available" class="form-label">Available Spaces</label>
+            <input type="number" class="form-control" id="available" required>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Add Lot</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white py-4 mt-5" style="background-color: #006747;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div>
+      <h5 class="fw-bold">UNIVERSITY OF SOUTH FLORIDA</h5>
+      <p class="mb-0">4202 E. Fowler Avenue<br>Tampa, FL 33620, USA<br>813-974-2011</p>
+    </div>
+    <ul class="list-unstyled d-flex gap-3 my-3 my-md-0">
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a></li>
+    </ul>
+    <ul class="list-unstyled text-end">
+      <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+      <li><a href="Visualizations.html" class="text-white text-decoration-none">Visualizations</a></li>
+      <li><a href="About.html" class="text-white text-decoration-none">About</a></li>
+      <li><a href="https://www.usf.edu/parking" class="text-white text-decoration-none" target="_blank">USF Parking Website</a></li>
+    </ul>
+  </div>
+  <div class="text-center mt-3 border-top pt-3" style="font-size: 0.9em;">
+    © 2025 - USFParkingApp
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('createForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const lot = {
+      lot: document.getElementById('lotName').value,
+      zone: document.getElementById('zone').value,
+      type: document.getElementById('type').value,
+      capacity: parseInt(document.getElementById('capacity').value),
+      available: parseInt(document.getElementById('available').value),
+      history: Array(5).fill(parseInt(document.getElementById('available').value))
+    };
+
+    const data = JSON.parse(localStorage.getItem("parkingData")) || [];
+    data.push(lot);
+    localStorage.setItem("parkingData", JSON.stringify(data));
+
+    alert("Parking lot added!");
+    window.history.back(); // go back to previous page
+  });
+</script>
+
+</body>
+</html>

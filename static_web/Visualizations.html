@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parking Data Visualizations - USF Parking Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --usf-green: #006747;
+    }
+    .text-usf-green { color: var(--usf-green); }
+    .hero-banner {
+      background-image: url("images/usf-parking-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold text-success" href="index.html">USFParkingApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Visualizations.html">Visualizations</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO BANNER -->
+<div class="hero-banner text-white d-flex align-items-center">
+  <div class="overlay w-100 h-100 position-absolute" style="background-color: rgba(0, 103, 71, 0.85); top: 0; left: 0;"></div>
+  <div class="w-100 text-center position-relative px-3 py-5" style="z-index: 2;">
+    <h1 class="display-4 fw-bold">Parking Data Visualizations</h1>
+    <p class="lead mt-3 mx-auto" style="max-width: 800px;">
+      This page provides an overview of parking trends and usage across the USF campus using dynamic visualizations.
+      The interactive charts below display parking lot capacity vs. availability, usage distribution among students, faculty, and visitors, 
+      and how availability changes throughout the day. This visualization layer helps guide future development of real-time monitoring systems.
+    </p>
+  </div>
+</div>
+
+<!-- VISUALIZATIONS SECTION -->
+<div class="container text-center pt-5 pb-5">
+  <div class="row gy-4 justify-content-center">
+
+    <!-- Bar Chart -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h4 class="mb-3">Capacity vs. Availability</h4>
+        <canvas id="barChart" width="300" height="300" style="max-width: 100%; height: auto;"></canvas>
+        <div class="mt-3 d-flex justify-content-center">
+          <a href="BarDetails.html" class="btn btn-outline-primary">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie Chart -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h4 class="mb-3">Usage by Type</h4>
+        <canvas id="pieChart" width="300" height="300" style="max-width: 100%; height: auto;"></canvas>
+        <div class="mt-3 d-flex justify-content-center">
+          <a href="PieDetails.html" class="btn btn-outline-primary">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h4 class="mb-3">Availability Trend</h4>
+        <canvas id="lineChart" width="300" height="300" style="max-width: 100%; height: auto;"></canvas>
+        <div class="mt-3 d-flex justify-content-center">
+          <a href="LineDetails.html" class="btn btn-outline-primary">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CRUD Buttons -->
+  <div class="mt-5 d-flex justify-content-center gap-3 flex-wrap">
+    <a href="Create.html" class="btn btn-success">Create</a>
+    <a href="Update.html" class="btn btn-warning">Update</a>
+    <a href="Delete.html" class="btn btn-danger">Delete</a>
+    <a href="Read.html" class="btn btn-info text-white">Read</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white py-4 mt-5" style="background-color: #006747;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div>
+      <h5 class="fw-bold">UNIVERSITY OF SOUTH FLORIDA</h5>
+      <p class="mb-0">4202 E. Fowler Avenue<br>Tampa, FL 33620, USA<br>813-974-2011</p>
+    </div>
+    <ul class="list-unstyled d-flex gap-3 my-3 my-md-0">
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a></li>
+    </ul>
+    <ul class="list-unstyled text-end">
+      <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+      <li><a href="Visualizations.html" class="text-white text-decoration-none">Visualizations</a></li>
+      <li><a href="About.html" class="text-white text-decoration-none">About</a></li>
+      <li><a href="https://www.usf.edu/parking" class="text-white text-decoration-none" target="_blank">USF Parking Website</a></li>
+    </ul>
+  </div>
+  <div class="text-center mt-3 border-top pt-3" style="font-size: 0.9em;">
+    © 2025 - USFParkingApp
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/visualizations.js"></script>
+
+</body>
+</html>

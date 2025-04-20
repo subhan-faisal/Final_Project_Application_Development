@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet the Team - USF Parking Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --usf-green: #006747;
+      --usf-gold: #C5960A;
+      --usf-navy: #00205B;
+    }
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .text-usf-green { color: var(--usf-green); }
+    .btn-outline-usf-green {
+      color: var(--usf-green);
+      border-color: var(--usf-green);
+    }
+    .btn-outline-usf-green:hover {
+      background-color: var(--usf-green);
+      color: white;
+    }
+    .hero-banner-about {
+      background-image: url("images/usf-parking-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold text-success" href="index.html">USFParkingApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Visualizations.html">Visualizations</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO BANNER -->
+<div class="hero-banner-about text-white d-flex align-items-center">
+  <div class="overlay w-100 h-100 position-absolute" style="background-color: rgba(0, 103, 71, 0.85); top: 0; left: 0;"></div>
+  <div class="w-100 text-center position-relative px-3 py-5" style="z-index: 2;">
+    <h1 class="display-4 fw-bold">Meet the Team</h1>
+  </div>
+</div>
+
+<!-- MAIN SECTION -->
+<div class="container py-5 text-center">
+
+  <!-- TEAM MEMBERS -->
+  <div class="row gy-4 justify-content-center">
+    <div class="col-sm-6 col-lg-3">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h5 class="text-usf-green fw-bold">Jennifer Negron</h5>
+        <p class="text-muted small">Project Lead</p>
+        <p class="mb-0">Home Page & CRUD Navigation</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h5 class="text-usf-green fw-bold">Ronia Arabian</h5>
+        <p class="text-muted small">Data Viz Specialist</p>
+        <p class="mb-0">Visualizations & Styling</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h5 class="text-usf-green fw-bold">Subhan Faisal</h5>
+        <p class="text-muted small">UI/UX Designer</p>
+        <p class="mb-0">Responsive Layout & Styling</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+        <h5 class="text-usf-green fw-bold">Chandar Rathala</h5>
+        <p class="text-muted small">Backend Architect</p>
+        <p class="mb-0">Data Flow & System Design</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGICAL DATA MODEL -->
+  <div class="mt-5 px-3">
+    <h2 class="fw-bold mb-3 text-usf-green">Logical Data Model</h2>
+    <p class="text-secondary mb-4">How our entities relate behind the scenes.</p>
+
+    <div class="p-4 bg-white rounded-4 shadow-sm mx-auto" style="max-width: 850px;">
+      <img src="images/data_model.png" alt="Logical Data Model" class="img-fluid rounded mb-3" />
+      <p class="small text-muted mb-0">
+        🔑 <strong>PK</strong> &nbsp; 🔗 <em>FK</em> &nbsp; ⚡ Computed Fields —
+        One <strong>ParkingLot</strong> ↔ Many <strong>ParkingActivity</strong> ↔ One <strong>User</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- GITHUB BUTTON -->
+  <div class="mt-5">
+    <a href="https://github.com/JenGBNegron/Final_Project_Application_Development.git"
+       target="_blank" class="btn btn-lg btn-outline-usf-green shadow-sm">
+      <i class="bi bi-github me-2"></i>View Source on GitHub
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white py-4 mt-5" style="background-color: #006747;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div>
+      <h5 class="fw-bold">UNIVERSITY OF SOUTH FLORIDA</h5>
+      <p class="mb-0">4202 E. Fowler Avenue<br>Tampa, FL 33620, USA<br>813-974-2011</p>
+    </div>
+    <ul class="list-unstyled d-flex gap-3 my-3 my-md-0">
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a></li>
+      <li><a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a></li>
+    </ul>
+    <ul class="list-unstyled text-end">
+      <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+      <li><a href="Visualizations.html" class="text-white text-decoration-none">Visualizations</a></li>
+      <li><a href="About.html" class="text-white text-decoration-none">About</a></li>
+      <li><a href="https://www.usf.edu/parking" class="text-white text-decoration-none" target="_blank">USF Parking Website</a></li>
+    </ul>
+  </div>
+  <div class="text-center mt-3 border-top pt-3" style="font-size: 0.9em;">
+    © 2025 - USFParkingApp
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
