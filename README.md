@@ -167,27 +167,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <div align="center">
   <a href="https://www.usf.edu">
-    <img src="https://www.usf.edu/images/logo.svg" alt="USF Logo" width="150">
   </a>
   <p>Built with 💚 by USF Students</p>
 </div>
 ```
-
-## Key Features of This README:
-
-1. **Visual Branding** - Uses USF colors and logo
-2. **Tech Stack Overview** - Clear separation of frontend/backend
-3. **Installation Instructions** - Step-by-step setup for both parts
-4. **Team Recognition** - Highlights each member's contribution
-5. **Interactive Elements**:
-   - Shields/badges
-   - Mermaid.js diagram for data model
-   - Visual folder structure
-6. **Professional Formatting** - Consistent headers and spacing
-7. **USF Branding** - Official logo and footer
-
-To use this README:
-1. Create a `LICENSE` file (MIT template recommended)
-2. Add an app screenshot named `app-screenshot.png` in your `wwwroot/images` folder
-3. Update any specific details as needed for your project
 
