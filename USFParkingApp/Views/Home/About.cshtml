@@ -1,10 +1,9 @@
 @{
     ViewData["Title"] = "About";
-    Layout = "_Layout";  // or your own layout
+    Layout = "_Layout";
 }
 
 <style>
-  /* USF Brand Colors */
   :root {
     --usf-green: #00205B;
     --usf-gold:  #C5960A;
@@ -20,8 +19,6 @@
     background-color: var(--usf-green);
     color: #fff;
   }
-
-  /* Custom hover lift effect */
   .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -29,7 +26,6 @@
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0,0,0,0.15);
   }
-  /* Section headings underline */
   .section-title {
     position: relative;
     display: inline-block;
@@ -49,62 +45,37 @@
 <section class="py-5" style="background: linear-gradient(135deg, var(--usf-gold) 10%, var(--usf-green) 90%);">
   <div class="container text-center">
 
-    <!-- USF Logo & Hero Title -->
-    <img src="~/images/usf-logo.svg" alt="USF Logo" style="height: 60px; margin-bottom: 1rem;" />
-    <h1 class="fw-bold mb-5 text-usf-green">Meet Our Team</h1>
+    <!-- Title -->
+    <h1 class="fw-bold mb-5 text-usf-green">Meet the Team</h1>
 
-    <!-- Team Cards -->
-    <div class="row g-4">
-      <!-- Jennifer -->
-      <div class="col-sm-6 col-lg-3">
-        <div class="card border-0 hover-lift h-100">
-          <div class="card-body text-center">
-            <div class="avatar mb-3">
-              <img src="~/images/team/jennifer.jpg" class="rounded-circle shadow-sm" alt="Jennifer Negron" width="100" height="100" />
-            </div>
-            <h5 class="card-title text-usf-green">Jennifer Negron</h5>
-            <p class="text-muted small">Project Lead</p>
-            <p class="card-text">Home Page &amp; CRUD Navigation</p>
-          </div>
+    <!-- Team Roles -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="card border-0 hover-lift h-100 text-center p-4">
+          <h5 class="card-title text-usf-green">Jennifer Negron</h5>
+          <p class="text-muted small">Project Lead</p>
+          <p class="card-text">Home Page &amp; CRUD Navigation</p>
         </div>
       </div>
-      <!-- Ronia -->
-      <div class="col-sm-6 col-lg-3">
-        <div class="card border-0 hover-lift h-100">
-          <div class="card-body text-center">
-            <div class="avatar mb-3">
-              <img src="~/images/team/ronia.jpg" class="rounded-circle shadow-sm" alt="Ronia Arabian" width="100" height="100" />
-            </div>
-            <h5 class="card-title text-usf-green">Ronia Arabian</h5>
-            <p class="text-muted small">Data Viz Specialist</p>
-            <p class="card-text">Chart.js &amp; Analytics</p>
-          </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card border-0 hover-lift h-100 text-center p-4">
+          <h5 class="card-title text-usf-green">Ronia Arabian</h5>
+          <p class="text-muted small">Data Viz Specialist</p>
+          <p class="card-text">Chart.js &amp; Analytics</p>
         </div>
       </div>
-      <!-- Subhan -->
-      <div class="col-sm-6 col-lg-3">
-        <div class="card border-0 hover-lift h-100">
-          <div class="card-body text-center">
-            <div class="avatar mb-3">
-              <img src="~/images/team/subhan.jpg" class="rounded-circle shadow-sm" alt="Subhan Faisal" width="100" height="100" />
-            </div>
-            <h5 class="card-title text-usf-green">Subhan Faisal</h5>
-            <p class="text-muted small">UI/UX Designer</p>
-            <p class="card-text">Responsive Layout &amp; Styling</p>
-          </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card border-0 hover-lift h-100 text-center p-4">
+          <h5 class="card-title text-usf-green">Subhan Faisal</h5>
+          <p class="text-muted small">UI/UX Designer</p>
+          <p class="card-text">Responsive Layout &amp; Styling</p>
         </div>
       </div>
-      <!-- Chandar -->
-      <div class="col-sm-6 col-lg-3">
-        <div class="card border-0 hover-lift h-100">
-          <div class="card-body text-center">
-            <div class="avatar mb-3">
-              <img src="~/images/team/chandar.jpg" class="rounded-circle shadow-sm" alt="Chandar Rathala" width="100" height="100" />
-            </div>
-            <h5 class="card-title text-usf-green">Chandar Rathala</h5>
-            <p class="text-muted small">Backend Architect</p>
-            <p class="card-text">Data Flow &amp; System Design</p>
-          </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card border-0 hover-lift h-100 text-center p-4">
+          <h5 class="card-title text-usf-green">Chandar Rathala</h5>
+          <p class="text-muted small">Backend Architect</p>
+          <p class="card-text">Data Flow &amp; System Design</p>
         </div>
       </div>
     </div>
@@ -124,7 +95,7 @@
       </div>
     </div>
 
-    <!-- Repository Link -->
+    <!-- GitHub Link -->
     <div class="mt-5">
       <a href="https://github.com/JenGBNegron/Final_Project_Application_Development.git" target="_blank" class="btn btn-lg btn-outline-usf-green shadow-sm">
         <i class="bi bi-github me-2"></i>View Source on GitHub
