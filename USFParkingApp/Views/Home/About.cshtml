@@ -11,9 +11,12 @@
 </ul>
 
 <h3>Logical Data Model</h3>
-<p>Below is a sample logical data model showing the parking lot relationships:</p>
+<p>This diagram shows how the backend system is structured using three main entities: ParkingLot, User, and ParkingActivity.</p>
 
-<img src="~/images/data_model.png" alt="Logical Data Model" style="width: 70%; border: 1px solid #ccc; padding: 10px;" />
+<img src="~/images/data_model.png" alt="Logical Data Model" 
+     style="width:100%; max-width:800px; border:1px solid #ccc; padding:10px; margin:20px 0;" />
+
+<p style="font-size: 0.9em; color: gray;">One ParkingLot can have many ParkingActivities. One User can also have many ParkingActivities. Each ParkingActivity is linked to one ParkingLot and one User.</p>
 
 <h3>GitHub Repository</h3>
 <p>View our source code here: 
