@@ -1,24 +1,135 @@
 @{
     ViewData["Title"] = "About";
+    Layout = "_Layout";  // or your own layout
 }
 
-<h2>About the Team</h2>
-<ul>
-    <li><strong>Jennifer Negron</strong> – Project Lead / Home Page + CRUD Navigation</li>
-    <li><strong>Ronia Arabian</strong> – Data Visualization & Chart.js Implementation</li>
-    <li><strong>Subhan Faisal</strong> – Static UI Styling / Responsiveness</li>
-    <li><strong>Chandar Rathala</strong> – Backend Planning / Data Flow Design</li>
-</ul>
+<style>
+  /* USF Brand Colors */
+  :root {
+    --usf-green: #00205B;
+    --usf-gold:  #C5960A;
+    --usf-breaker: #006747;
+  }
+  .text-usf-green { color: var(--usf-green) !important; }
+  .bg-usf-gold { background-color: var(--usf-gold) !important; }
+  .btn-outline-usf-green {
+    color: var(--usf-green);
+    border-color: var(--usf-green);
+  }
+  .btn-outline-usf-green:hover {
+    background-color: var(--usf-green);
+    color: #fff;
+  }
 
-<h3>Logical Data Model</h3>
-<p>This diagram shows how the backend system is structured using three main entities: ParkingLot, User, and ParkingActivity.</p>
+  /* Custom hover lift effect */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  }
+  /* Section headings underline */
+  .section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  .section-title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: var(--usf-green);
+    bottom: 0;
+    left: 25%;
+  }
+</style>
 
-<img src="~/images/data_model.png" alt="Logical Data Model" 
-     style="width:100%; max-width:800px; border:1px solid #ccc; padding:10px; margin:20px 0;" />
+<section class="py-5" style="background: linear-gradient(135deg, var(--usf-gold) 10%, var(--usf-green) 90%);">
+  <div class="container text-center">
 
-<p style="font-size: 0.9em; color: gray;">One ParkingLot can have many ParkingActivities. One User can also have many ParkingActivities. Each ParkingActivity is linked to one ParkingLot and one User.</p>
+    <!-- USF Logo & Hero Title -->
+    <img src="~/images/usf-logo.svg" alt="USF Logo" style="height: 60px; margin-bottom: 1rem;" />
+    <h1 class="fw-bold mb-5 text-usf-green">Meet Our Team</h1>
 
-<h3>GitHub Repository</h3>
-<p>View our source code here: 
-  <a href="https://github.com/chandarr7/usfpark" target="_blank">GitHub - USF Parking Monitor</a>
-</p>
+    <!-- Team Cards -->
+    <div class="row g-4">
+      <!-- Jennifer -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border-0 hover-lift h-100">
+          <div class="card-body text-center">
+            <div class="avatar mb-3">
+              <img src="~/images/team/jennifer.jpg" class="rounded-circle shadow-sm" alt="Jennifer Negron" width="100" height="100" />
+            </div>
+            <h5 class="card-title text-usf-green">Jennifer Negron</h5>
+            <p class="text-muted small">Project Lead</p>
+            <p class="card-text">Home Page &amp; CRUD Navigation</p>
+          </div>
+        </div>
+      </div>
+      <!-- Ronia -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border-0 hover-lift h-100">
+          <div class="card-body text-center">
+            <div class="avatar mb-3">
+              <img src="~/images/team/ronia.jpg" class="rounded-circle shadow-sm" alt="Ronia Arabian" width="100" height="100" />
+            </div>
+            <h5 class="card-title text-usf-green">Ronia Arabian</h5>
+            <p class="text-muted small">Data Viz Specialist</p>
+            <p class="card-text">Chart.js &amp; Analytics</p>
+          </div>
+        </div>
+      </div>
+      <!-- Subhan -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border-0 hover-lift h-100">
+          <div class="card-body text-center">
+            <div class="avatar mb-3">
+              <img src="~/images/team/subhan.jpg" class="rounded-circle shadow-sm" alt="Subhan Faisal" width="100" height="100" />
+            </div>
+            <h5 class="card-title text-usf-green">Subhan Faisal</h5>
+            <p class="text-muted small">UI/UX Designer</p>
+            <p class="card-text">Responsive Layout &amp; Styling</p>
+          </div>
+        </div>
+      </div>
+      <!-- Chandar -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border-0 hover-lift h-100">
+          <div class="card-body text-center">
+            <div class="avatar mb-3">
+              <img src="~/images/team/chandar.jpg" class="rounded-circle shadow-sm" alt="Chandar Rathala" width="100" height="100" />
+            </div>
+            <h5 class="card-title text-usf-green">Chandar Rathala</h5>
+            <p class="text-muted small">Backend Architect</p>
+            <p class="card-text">Data Flow &amp; System Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Model Section -->
+    <div class="mt-5">
+      <h2 class="section-title mb-4 text-usf-green">Logical Data Model</h2>
+      <p class="text-secondary mb-3">How our entities relate behind the scenes.</p>
+      <div class="card mx-auto border-0 shadow-sm" style="max-width: 800px;">
+        <img src="~/images/data_model.png" class="card-img-top" alt="Logical Data Model" />
+        <div class="card-body">
+          <p class="small text-muted mb-0">
+            🔑 <strong>PK</strong> &nbsp; 🔗 <em>FK</em> &nbsp; ⚡ Computed Fields &nbsp; —  
+            One <strong>ParkingLot</strong> ↔ Many <strong>ParkingActivity</strong> ↔ One <strong>User</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repository Link -->
+    <div class="mt-5">
+      <a href="https://github.com/chandarr7/usfpark" target="_blank" class="btn btn-lg btn-outline-usf-green shadow-sm">
+        <i class="bi bi-github me-2"></i>View Source on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
