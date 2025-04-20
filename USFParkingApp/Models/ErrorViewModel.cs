@@ -1,8 +1,10 @@
-namespace USFParkingApp.Models;
-
-public class ErrorViewModel
+namespace USFParkingApp.Models
 {
-    public string? RequestId { get; set; }
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
 
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        // This property returns true if the RequestId is not null or empty, otherwise false
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }

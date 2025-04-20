@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg",
+      "PackagePath": "staticwebassets/images/ usf-logo.svg"
+    },
+    {
       "Id": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/data_model.png",
       "PackagePath": "staticwebassets/images/data_model.png"
     },

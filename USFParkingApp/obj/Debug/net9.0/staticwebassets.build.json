@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IKz0v/JmO4tVZM66v65oJxGj+Usvt9ULZ8RqONEN4ww=",
+  "Hash": "NW7dOgfIjbpM7EhjPY5gDCUGMbzrNSDpNUeTWhftlVo=",
   "Source": "USFParkingApp",
   "BasePath": "_content/USFParkingApp",
   "Mode": "Default",
@@ -1403,6 +1403,27 @@
       "OriginalItemSpec": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
+      "Identity": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz",
+      "SourceId": "USFParkingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/USFParkingApp",
+      "RelativePath": "images/ usf-logo#[.{fingerprint=q1654lf28b}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1rh4ccwwr5",
+      "Integrity": "I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg"
+    },
+    {
       "Identity": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yj8i569zhe-63fj8s7r0e.gz",
       "SourceId": "USFParkingApp",
       "SourceType": "Discovered",
@@ -1527,6 +1548,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg",
+      "SourceId": "USFParkingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/",
+      "BasePath": "_content/USFParkingApp",
+      "RelativePath": "images/ usf-logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q1654lf28b",
+      "Integrity": "3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/ usf-logo.svg"
     },
     {
       "Identity": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/data_model.png",
@@ -3509,6 +3551,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.q1654lf28b.svg",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000906618314"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1102"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q1654lf28b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ usf-logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.q1654lf28b.svg",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q1654lf28b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ usf-logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.q1654lf28b.svg.gz",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q1654lf28b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ usf-logo.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.svg",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000906618314"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1102"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.svg",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/wwwroot/images/ usf-logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hU8ZtAAbPJoBUlp+Gt0kWTcCqdS2C4wIdChHNo41V8="
+        }
+      ]
+    },
+    {
+      "Route": "images/ usf-logo.svg.gz",
+      "AssetFile": "/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I5GAiqXslsu0guNiiZNSHc0bGmHdIUTUjGkSCw+asnY="
         }
       ]
     },

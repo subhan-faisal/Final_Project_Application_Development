@@ -202,3 +202,7 @@ C:/Users/mojtabaa/Desktop/Web_app/Final_Project_Application_Development/USFParki
 /Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/1txhwfxgb2-w6kby033yq.gz
 /Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/vocqp2ac9t-kdt27un04w.gz
 /Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/098258ald7-h0otrxxgim.gz
+/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/USFParkingApp.csproj.AssemblyReference.cache
+/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/USFParki.E9A8DDCD.Up2Date
+/Users/chandarrathala/Desktop/Final_Project_Application_Development/USFParkingApp/obj/Debug/net9.0/compressed/yadsgxg6o1-q1654lf28b.gz

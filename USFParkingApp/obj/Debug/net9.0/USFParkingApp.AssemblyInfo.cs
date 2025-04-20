@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("USFParkingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a0780eb404a1a21b5f93f852dd17263b989e881")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d66f2e4182709a2aa70d950227be9c8e160b054b")]
 [assembly: System.Reflection.AssemblyProductAttribute("USFParkingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("USFParkingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
