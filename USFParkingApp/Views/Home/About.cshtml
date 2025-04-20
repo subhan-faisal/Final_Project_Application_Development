@@ -3,104 +3,94 @@
     Layout = "_Layout";
 }
 
+<!-- HERO BANNER -->
+<div class="hero-banner-about text-white d-flex align-items-center">
+    <div class="overlay w-100 h-100 position-absolute" style="background-color: rgba(0, 103, 71, 0.85); top: 0; left: 0;"></div>
+    <div class="w-100 text-center position-relative px-3 py-5" style="z-index: 2;">
+        <h1 class="display-4 fw-bold">Meet the Team</h1>
+    </div>
+</div>
+
+<!-- MAIN SECTION -->
+<div class="container py-5 text-center">
+
+    <!-- Team Members -->
+    <div class="row gy-4 justify-content-center">
+        <div class="col-sm-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="text-usf-green fw-bold">Jennifer Negron</h5>
+                <p class="text-muted small">Project Lead</p>
+                <p class="mb-0">Home Page & CRUD Navigation</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="text-usf-green fw-bold">Ronia Arabian</h5>
+                <p class="text-muted small">Data Viz Specialist</p>
+                <p class="mb-0">Visualizations & Styling</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="text-usf-green fw-bold">Subhan Faisal</h5>
+                <p class="text-muted small">UI/UX Designer</p>
+                <p class="mb-0">Responsive Layout & Styling</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="text-usf-green fw-bold">Chandar Rathala</h5>
+                <p class="text-muted small">Backend Architect</p>
+                <p class="mb-0">Data Flow & System Design</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGICAL DATA MODEL -->
+    <div class="mt-5 px-3">
+        <h2 class="fw-bold mb-3 text-usf-green">Logical Data Model</h2>
+        <p class="text-secondary mb-4">How our entities relate behind the scenes.</p>
+
+        <div class="p-4 bg-white rounded-4 shadow-sm mx-auto" style="max-width: 850px;">
+            <img src="~/images/data_model.png" alt="Logical Data Model" class="img-fluid rounded mb-3" />
+            <p class="small text-muted mb-0">
+                🔑 <strong>PK</strong> &nbsp; 🔗 <em>FK</em> &nbsp; ⚡ Computed Fields —  
+                One <strong>ParkingLot</strong> ↔ Many <strong>ParkingActivity</strong> ↔ One <strong>User</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- GITHUB BUTTON -->
+    <div class="mt-5">
+        <a href="https://github.com/JenGBNegron/Final_Project_Application_Development.git" target="_blank" class="btn btn-lg btn-outline-usf-green shadow-sm">
+            <i class="bi bi-github me-2"></i>View Source on GitHub
+        </a>
+    </div>
+</div>
+
 <style>
-  :root {
-    --usf-green: #00205B;
-    --usf-gold:  #C5960A;
-    --usf-breaker: #006747;
-  }
-  .text-usf-green { color: var(--usf-green) !important; }
-  .bg-usf-gold { background-color: var(--usf-gold) !important; }
-  .btn-outline-usf-green {
-    color: var(--usf-green);
-    border-color: var(--usf-green);
-  }
-  .btn-outline-usf-green:hover {
-    background-color: var(--usf-green);
-    color: #fff;
-  }
-  .hover-lift {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .hover-lift:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-  }
-  .section-title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-  }
-  .section-title::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    background-color: var(--usf-green);
-    bottom: 0;
-    left: 25%;
-  }
+    :root {
+        --usf-green: #006747;
+        --usf-gold: #C5960A;
+        --usf-navy: #00205B;
+    }
+    .text-usf-green { color: var(--usf-green); }
+    .btn-outline-usf-green {
+        color: var(--usf-green);
+        border-color: var(--usf-green);
+    }
+    .btn-outline-usf-green:hover {
+        background-color: var(--usf-green);
+        color: white;
+    }
+
+    @* .hero-banner-about {
+        background-image: url('/images/usf-parking-bg.jpg'); /* replace with your actual image */
+        background-size: cover;
+        background-position: center;
+        height: 420px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    } *@
 </style>
-
-<section class="py-5" style="background: linear-gradient(135deg, var(--usf-gold) 10%, var(--usf-green) 90%);">
-  <div class="container text-center">
-
-    <!-- Title -->
-    <h1 class="fw-bold mb-5 text-usf-green">Meet the Team</h1>
-
-    <!-- Team Roles -->
-    <div class="row g-4 justify-content-center">
-      <div class="col-sm-6 col-md-4">
-        <div class="card border-0 hover-lift h-100 text-center p-4">
-          <h5 class="card-title text-usf-green">Jennifer Negron</h5>
-          <p class="text-muted small">Project Lead</p>
-          <p class="card-text">Home Page &amp; CRUD Navigation</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="card border-0 hover-lift h-100 text-center p-4">
-          <h5 class="card-title text-usf-green">Ronia Arabian</h5>
-          <p class="text-muted small">Data Viz Specialist</p>
-          <p class="card-text">Chart.js &amp; Analytics</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="card border-0 hover-lift h-100 text-center p-4">
-          <h5 class="card-title text-usf-green">Subhan Faisal</h5>
-          <p class="text-muted small">UI/UX Designer</p>
-          <p class="card-text">Responsive Layout &amp; Styling</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="card border-0 hover-lift h-100 text-center p-4">
-          <h5 class="card-title text-usf-green">Chandar Rathala</h5>
-          <p class="text-muted small">Backend Architect</p>
-          <p class="card-text">Data Flow &amp; System Design</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Data Model Section -->
-    <div class="mt-5">
-      <h2 class="section-title mb-4 text-usf-green">Logical Data Model</h2>
-      <p class="text-secondary mb-3">How our entities relate behind the scenes.</p>
-      <div class="card mx-auto border-0 shadow-sm" style="max-width: 800px;">
-        <img src="~/images/data_model.png" class="card-img-top" alt="Logical Data Model" />
-        <div class="card-body">
-          <p class="small text-muted mb-0">
-            🔑 <strong>PK</strong> &nbsp; 🔗 <em>FK</em> &nbsp; ⚡ Computed Fields &nbsp; —  
-            One <strong>ParkingLot</strong> ↔ Many <strong>ParkingActivity</strong> ↔ One <strong>User</strong>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- GitHub Link -->
-    <div class="mt-5">
-      <a href="https://github.com/JenGBNegron/Final_Project_Application_Development.git" target="_blank" class="btn btn-lg btn-outline-usf-green shadow-sm">
-        <i class="bi bi-github me-2"></i>View Source on GitHub
-      </a>
-    </div>
-
-  </div>
-</section>

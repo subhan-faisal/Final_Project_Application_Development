@@ -1,21 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "USF Parking Monitor";
 }
+<!-- Full-Width Hero Banner with Green Overlay -->
+<div class="hero-banner text-white d-flex align-items-center">
+    <div class="overlay w-100 h-100 position-absolute" style="background-color: rgba(0, 103, 71, 0.85); top: 0; left: 0;"></div>
 
-<section class="intro">
-    <h2>Welcome to the USF Parking Monitor</h2>
-    <p>
-        This prototype web application is designed to help students, faculty, and staff view available parking spaces across the USF campus in real time.
-        While real-time data integration is a future enhancement, this version presents the foundational structure for CRUD operations and data display.
-    </p>
-</section>
+    <div class="w-100 text-center position-relative px-3 py-5" style="z-index: 2;">
+        <h1 class="display-4 fw-bold">USF Parking Monitor</h1>
+        <p class="lead mt-3 mx-auto" style="max-width: 800px;">
+            This prototype web application is designed to help students, faculty, and staff view available parking spaces across the USF campus in real time.
+            While real-time data integration is a future enhancement, this version presents the foundational structure for CRUD operations and data display.
+        </p>
+        <!-- 🚀 Button -->
+        <a href="/Visualizations" class="btn btn-outline-light btn-lg mt-4 px-4">
+            🚀 Explore Visualizations
+        </a>
+    </div>
+</div>
 
-<section class="features">
-    <h3>Key Features (Planned)</h3>
-    <ul>
-        <li>🔄 Live updates on parking availability</li>
-        <li>📍 Parking lot zones and names</li>
-        <li>📊 Data visualization for parking trends</li>
-        <li>🛠️ Admin dashboard for managing lot info</li>
-    </ul>
-</section>
+<!-- Feature Card Section -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-lg border-0">
+                <div class="card-body px-5 py-4">
+                    <h3 class="card-title mb-4 text-center text-success">🚗 Key Features (Planned)</h3>
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-2"><span class="feature-icon usf-gold">📶</span> Live updates on parking availability</li>
+                        <li class="mb-2"><span class="feature-icon usf-gold">📍</span> Parking lot zones and names</li>
+                        <li class="mb-2"><span class="feature-icon usf-gold">📊</span> Data visualization for parking trends</li>
+                        <li class="mb-2"><span class="feature-icon usf-gold">🛠️</span> Admin dashboard for managing lot info</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+}

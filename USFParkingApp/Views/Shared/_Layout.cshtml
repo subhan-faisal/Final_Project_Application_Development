@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - USFParkingApp</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/USFParkingApp.styles.css" asp-append-version="true" />
 </head>
@@ -41,11 +42,45 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2025 - USFParkingApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
+    </footer> *@
+
+    <footer style="background-color: #006747;" class="text-white pt-5 pb-3 mt-5">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <!-- Logo and Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">UNIVERSITY OF SOUTH FLORIDA</h5>
+                    <p class="mb-1">4202 E. Fowler Avenue<br>Tampa, FL 33620, USA</p>
+                    <p>813-974-2011</p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="https://www.facebook.com/USouthFlorida" target="_blank" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/user/USFChannel" target="_blank" class="text-white"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.linkedin.com/school/university-of-south-florida/" target="_blank" class="text-white"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/usouthflorida/" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="/Home" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="/Visualizations" class="text-white text-decoration-none">Visualizations</a></li>
+                        <li><a href="/Home/About" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="https://www.usf.edu/administrative-services/parking/" class="text-white text-decoration-none" target="_blank">USF Parking Website</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <hr class="border-top border-light">
+            <p class="text-center small mb-0">© 2025 - USFParkingApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+        </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

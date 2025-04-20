@@ -93,3 +93,31 @@ body {
   h2 { font-size: calc(1.75rem * var(--heading-mult)); }
 }
 
+/* ── 7. Added ────────────────────────────────────── */
+a.text-white:hover {
+  color: #fdbb30 !important;
+}
+
+.hero-banner,
+.visualizations-banner,
+.hero-banner-about {
+  background-image: url('/images/usf-parking-bg.jpg'); /* use your image */
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  position: relative;
+  width: 100vw; /* FULL width */
+  margin-left: calc(-50vw + 50%); /* align with page */
+}
+
+.feature-icon.usf-gold {
+  color: #fdbb30;
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
