@@ -191,8 +191,3 @@ To use this README:
 2. Add an app screenshot named `app-screenshot.png` in your `wwwroot/images` folder
 3. Update any specific details as needed for your project
 
-Would you like me to add any additional sections like:
-- API documentation
-- Deployment instructions
-- Future roadmap
-- Testing guidelines?
